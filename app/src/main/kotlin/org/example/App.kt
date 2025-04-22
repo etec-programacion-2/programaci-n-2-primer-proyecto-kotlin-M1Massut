@@ -4,8 +4,29 @@
 package org.example
 //Paso 1
 fun main(){
-println("¡Hola, Kotlin!")
-println("Mi nombre es: Máximo Massut y hoy es 22/04/2025")
+    println("¡Hola, Kotlin!")
+    println("Mi nombre es: Máximo Massut y hoy es 22/04/2025")
+    tipos_de_variables()
+    calc_area()
+}
 
 
+fun tipos_de_variables() {
+    val nombre: String = "Max"
+    val edad: Int = 18
+    val altura: Double = 1.75
+    val aprobado: Boolean = true
+    
+    println("Nombre: $nombre")
+    println("Edad: $edad")
+    println("Altura: $altura")
+    println("¿Estoy abprobado?: $aprobado")
+}
+fun calc_area(){    
+    val base_triangulo: Double=20.3
+    val altura_triangulo: Double=60.5
+
+    println("La base del triangulo es:$base_triangulo")
+    println("La altura del triangulo es:$altura_triangulo")
+    println("Entonces el area del triangulo es:${base_triangulo*altura_triangulo/2}")
 }
