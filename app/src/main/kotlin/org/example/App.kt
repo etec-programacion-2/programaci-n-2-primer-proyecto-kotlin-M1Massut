@@ -45,13 +45,24 @@ fun es_negativo_positivo_0(numero:Int):String{
 
 //Paso 4
 fun mostrarNumerosConLoops() {
-    // Usando for
+    // Usando for}
+      println("Usando for:")
+    for (i in 1..10 step 1) {
+        println(i)
+    }
     println("Usando for:")
     for (i in 2..20 step 2) {
         println(i)
     }
     
     // Usando while
+     println("\nUsando while:")
+    var j = 1
+    while (j <= 10) {
+         println(j)
+        }
+        j++
+    }
     println("\nUsando while:")
     var j = 1
     while (j <= 20) {
@@ -63,6 +74,12 @@ fun mostrarNumerosConLoops() {
     
     // Usando do-while
     println("\nUsando do-while:")
+    var k = 1 
+    do {
+        println(k)
+        k++
+    } while (k <= 10 )
+
     var k = 1 
     do {
         if (k % 2 == 0) {
