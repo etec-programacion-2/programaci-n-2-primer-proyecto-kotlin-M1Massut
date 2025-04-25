@@ -8,6 +8,7 @@ fun main(){
     println("Mi nombre es: Máximo Massut y hoy es 22/04/2025")
     tipos_de_variables()
     calc_area()
+    
 }
 
 
@@ -29,4 +30,16 @@ fun calc_area(){
     println("La base del triangulo es:$base_triangulo")
     println("La altura del triangulo es:$altura_triangulo")
     println("Entonces el area del triangulo es:${base_triangulo*altura_triangulo/2}")
+}
+
+fun es_negativo_positivo-0(numero:Int):String{
+    return when{
+        numero > 0 -> "positivo"
+        numero < 0 -> "negativo"
+        else -> "cero" 
+    }
+
+
+
+
 }
