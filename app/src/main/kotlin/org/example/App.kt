@@ -9,6 +9,7 @@ fun main(){
     calc_area()
     es_negativo_positivo_0(4)
     mostrarNumerosConLoops()
+    potencia(4,2)
     
 }
 
@@ -86,4 +87,17 @@ fun mostrarNumerosConLoops() {
         }
         y++
     } while (y <= 20 )
+}
+//Paso 5
+fun factorial(n: Int): Int {
+    return if (n <= 1) 1 else n * factorial(n - 1)
+}
+
+fun saludar(nombre: String, edad: Int = 0) {
+    println("Hola $nombre, tienes $edad años")
+}
+fun potencia (base: Int, exponente: Int): Int {
+    var resultado = if (exponente == 0) 1 else base * potencia(base, exponente - 1)
+    println("La potencia de $base elevado a $exponente es: $resultado")    
+    return resultado
 }
