@@ -56,20 +56,19 @@ fun mostrarNumerosConLoops() {
     }
     
     // Usando while
-     println("\nUsando while:")
+    println("\nUsando while:")
     var j = 1
-    while (j <= 10) {
+    while (j <= 10){ {
          println(j)
         }
         j++
     }
-    println("\nUsando while:")
-    var j = 1
-    while (j <= 20) {
-        if (j % 2 == 0) {
-            println(j)
+    var x = 1
+    while (x<= 20) {
+        if (x % 2 == 0) {
+            println(x)
         }
-        j++
+        x++
     }
     
     // Usando do-while
@@ -80,11 +79,11 @@ fun mostrarNumerosConLoops() {
         k++
     } while (k <= 10 )
 
-    var k = 1 
+    var y = 1 
     do {
-        if (k % 2 == 0) {
-            println(k)
+        if (y % 2 == 0) {
+            println(y)
         }
-        k++
-    } while (k <= 20 )
+        y++
+    } while (y <= 20 )
 }
